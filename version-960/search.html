@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>搜索筛选-高分电视剧-热门电视剧大全-精选内容持续更新</title>
+  <meta name="description" content="支持按关键词、年份、地区和分类筛选片库内容。" />
+  <meta name="keywords" content="高分电视剧,热门电视剧大全,电视剧片单,精选剧集,剧集榜单,热播电视剧,搜索,筛选" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="高分电视剧首页">
+      <span class="brand-icon">剧</span>
+      <span>高分电视剧</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类总览</a>
+      <a href="ranking.html">热播榜</a>
+      <a href="search.html">搜索筛选</a>
+      <a href="category/selected-drama.html">精选剧集</a><a href="category/hot-series.html">热播推荐</a><a href="category/suspense-thriller.html">悬疑惊悚</a><a href="category/comedy-light.html">喜剧轻松</a><a href="category/action-adventure.html">动作冒险</a>
+    </nav>
+    <form class="nav-search" action="search.html" method="get">
+      <input name="q" type="search" placeholder="搜索影视..." />
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="打开菜单" data-menu-toggle>☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="index.html">首页</a>
+    <a href="categories.html">分类总览</a>
+    <a href="ranking.html">热播榜</a>
+    <a href="search.html">搜索筛选</a>
+    <a href="category/selected-drama.html">精选剧集</a><a href="category/hot-series.html">热播推荐</a><a href="category/suspense-thriller.html">悬疑惊悚</a><a href="category/comedy-light.html">喜剧轻松</a><a href="category/action-adventure.html">动作冒险</a><a href="category/family-emotion.html">情感家庭</a><a href="category/fantasy-sci-fi.html">科幻奇幻</a><a href="category/period-legend.html">年代传奇</a><a href="category/global-choice.html">海外佳作</a><a href="category/classic-score.html">经典口碑</a>
+  </div>
+</header>
+<main class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>搜索筛选</span></div>
+    <span class="kicker">搜索 / 筛选</span>
+    <h1>搜索筛选</h1>
+    <p>输入影片名、题材、地区或标签，可以在全站片库中快速筛选。</p>
+  </div>
+</main>
+<section class="section">
+  <div class="container">
+    <form class="search-panel" data-search-form>
+      <input name="q" type="search" placeholder="输入关键词" />
+      <select name="year"><option value="">全部年份</option></select>
+      <select name="region"><option value="">全部地区</option></select>
+      <select name="category"><option value="">全部分类</option></select>
+    </form>
+    <div class="movie-grid" data-search-result></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-icon">剧</span>
+        <span>高分电视剧</span>
+      </a>
+      <p>高分电视剧栏目关注口碑较好的剧集内容，结合评分、热度和题材展示剧集片单。</p>
+    </div>
+    <div>
+      <h3>站内入口</h3>
+      <a href="categories.html">分类总览</a>
+      <a href="ranking.html">热播榜入口</a>
+      <a href="search.html">搜索筛选</a>
+    </div>
+    <div>
+      <h3>热门分类</h3>
+      <a href="category/selected-drama.html">精选剧集</a><a href="category/hot-series.html">热播推荐</a><a href="category/suspense-thriller.html">悬疑惊悚</a><a href="category/comedy-light.html">喜剧轻松</a><a href="category/action-adventure.html">动作冒险</a><a href="category/family-emotion.html">情感家庭</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/movies-lite.js"></script>
+<script src="assets/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
